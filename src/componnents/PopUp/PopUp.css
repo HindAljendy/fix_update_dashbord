@@ -1,0 +1,38 @@
+
+.HJ_modal_popUp{
+    width: 31.875rem;
+    height: 17.1875rem;
+    border-radius: 0.625rem;
+    border: none;
+    margin:  11.7rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.625rem;
+    background: #FFFDFD; 
+}
+
+.btn_cancel{
+    background-color:white;
+    color: #004E6B ;
+    border-radius: 0.5rem;
+    border-color: #004E6B;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    padding:0.5rem;
+    margin-top:1rem ;
+    margin-bottom: 1rem;
+    margin-left:1.19rem ;
+
+}
+.ReactModal__Overlay .ReactModal__Overlay--after-open{
+    position: fixed;
+    inset: 0px;
+    background-color: rgba(0, 0, 0, 0.70); 
+    backdrop-filter: blur(1px);
+}
+.space_left{
+    margin-left: 1rem;
+}

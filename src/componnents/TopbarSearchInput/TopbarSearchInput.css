@@ -1,0 +1,27 @@
+.HJ_topbar_search{
+    position: relative;
+    right: 5rem;
+
+}
+.HJ_topbar_search .HJ_search{
+    width: 18.75rem;
+    border: none;
+    border-bottom: 1px solid  #004E6B ;
+    position: absolute;
+    left: 2.2rem;
+    position: relative;
+}
+.HJ_topbar_search input::placeholder{
+    color: rgba(0, 78, 107, 0.70);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 1.5rem;
+    bottom: 0.1rem;
+}
+.HJ_topbar_search .HJ_image_search{
+    position: absolute;
+    left: 2.3rem;
+    bottom: 0.1rem;
+}

@@ -1,0 +1,23 @@
+
+.AD_FilterBy{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+.AD_FilterBy .AD_select_pageRoom{
+    width: 13.75rem;
+    border: none;
+    outline: none;
+    border-bottom:1px solid black;
+    background-color: #F0F0F0;
+    color: #282828;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.AD_links_room{
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+}

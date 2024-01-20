@@ -1,0 +1,194 @@
+.HJ_form{
+    width: 74vw;
+    background-color: #F0F0F0;
+    padding-left: 1.25rem;
+}
+.HJ_form-part1 .HJ_label{
+    color: black;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.HJ_form-part1 .HJ_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.HJ_form-part1 .HJ_content .HJ_form-image{  
+    width: 95%;
+    height: 24.8rem;
+    border-radius: 1.01em;
+    background: #004E6B;
+    margin-right: 5%;
+}
+.HJ_form-image img{
+    border-radius: 1.01em;
+}
+.HJ_form-part1 .HJ_content .HJ_new{
+    width: 6.4rem;
+    position: absolute;
+    left:42%;
+    top: 34%; 
+}
+
+.HJ_form-part1 .HJ_label::after{
+    content: " * ";
+    color: #E76A6A;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+
+.HJ_form-part2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: 95%;
+    margin-right: 5%;
+    justify-content: space-between;
+
+}
+.HJ_form-part2 .HJ_title {
+    width: 100%;
+}
+.HJ_form-part2 , .HJ_form_description{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.HJ_inputBox{
+    position: relative;
+    width: 60%;
+}
+.HJ_inputBox input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom:  1px solid #282828;
+    margin-right: 10px;
+    padding: 10px;
+}
+.HJ_inputBox  span{
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+
+}
+.HJ_inputBox  span::after{
+    content: '*';
+    color:  #E76A6A;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+}
+.HJ_inputBox input:valid ~ span ,
+.HJ_inputBox input:focus ~ span
+{
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transform:translateX(5px) translateY(-15px);
+    padding: 0 10px;
+    background: transparent;
+    
+}
+.HJ_form-part2 .HJ_date{
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    border-bottom:  1px solid #282828;
+    outline: none;
+}
+.HJ_date::before{
+    content: "Date:";
+    color: rgba(146, 140, 140, 1);
+}
+
+.HJ_form_select{
+    position: relative;
+    width: 95%;
+    margin-right: 5%;
+    margin-bottom: 1.2rem;
+}
+.HJ_form_select select{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom:  1px solid #282828;
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.HJ_form_select label{
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+    position: absolute;
+    left: 0rem;
+    top: -0.8rem;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.HJ_form_select label::after{
+    content: '*';
+    color:  #E76A6A;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.HJ_form_select label.focused {
+    transform: translateY(-20px);
+    padding: 2px 10px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color:#282828;
+}
+
+.HJ_form_description .HJ_description{
+    width: 95%;
+    margin-right: 5%;
+    height: 19.125rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HJ_form_description label{
+    color: #282828;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.HJ_form_link a{
+    color: #004E6B;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0.5rem;
+}
+
+.HJ_form_buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5%;
+}
+.HJ_form_buttons .HJ_btn{
+    margin: 0 0 0 20px;
+}
+
+
+
+
+

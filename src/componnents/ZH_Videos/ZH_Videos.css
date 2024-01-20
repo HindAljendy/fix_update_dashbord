@@ -1,0 +1,59 @@
+.zh-gl-3  ,.zh-gl-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.zh-gl-3 video, .zh-gl-4 video{
+    margin: 3% 0% 0% 2%;
+    width: 900px;
+    border-radius: 16.2px;
+}
+
+.zh-gl-3 .video1{
+    width: 350px;
+    height: 124px !important;
+    object-fit: cover;
+}
+
+.zh-gl-3 .video2{
+    height: 124px !important;  
+    width: 15.3%;
+    width: 151px;
+    object-fit: cover;
+    
+}
+
+.zh-gl-3 .video3{
+    width: 316px;
+    height: 124px !important;
+    object-fit: cover;
+    
+}
+
+.zh-gl-4 .video1{
+    width: 240px;
+    height: 124px !important;
+    object-fit: cover;
+    
+}
+
+.zh-gl-4 .video2{
+    width: 140px;
+    height: 124px !important;
+
+    object-fit: cover;
+
+}
+
+.zh-gl-4 .video3{
+    height: 120px !important;
+    object-fit: cover;
+    width: 152px;
+}
+
+.zh-gl-4 .video4{
+    height: 118px !important;
+    width: 271px;
+    object-fit: cover;
+
+}

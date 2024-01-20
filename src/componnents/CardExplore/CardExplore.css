@@ -1,0 +1,29 @@
+.explore_card{
+    width: 983px;  
+}
+.col-md-922 .HJ_card-body{
+    width: 752px;
+    margin: 0;
+    padding: 0 20px 20px 20px;
+}
+.explore_card .row12
+{
+    display: flex;
+}
+.explore_card .row12 .HJ_article-img
+{
+    width: 231px;
+    height: 215px;
+}
+.col-md-922 .HJ_card-name .HJ_card-title
+{
+    color: var(--black, #282828);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.col-md-922 .HJ_card-text .HJ_text-body-secondary
+{
+    display: none;
+}

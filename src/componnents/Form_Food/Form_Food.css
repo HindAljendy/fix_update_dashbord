@@ -1,0 +1,115 @@
+.RH_form_food_select{
+    position: relative;
+    top:1.3rem;
+}
+.RH_form_food_select select{
+    width: 13.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom:  1px solid #282828;
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.RH_form_food_select label{
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+    position: absolute;
+    left: 0rem;
+    top: -0.8rem;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.RH_form_food_select label::after{
+    content: '*';
+    color:  #E76A6A;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.RH_form_food_select label.focused {
+    transform: translateY(-20px);
+    padding: 2px 10px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color:#282828;
+}
+
+.RH_form_food_description{
+    position: relative;
+}
+.RH_form_food_description input{
+    width: 53rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom:  1px solid #282828;
+    padding: 10px; 
+}
+.RH_form_food_description  label{
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+
+}
+.RH_form_food_description label::after{
+    content: '*';
+    color:  #E76A6A;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+}
+.RH_form_food_description label.focused {
+    transform: translateY(-20px);
+    padding: 2px 10px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color:#282828;
+}
+
+.RH_form_lastSection .RH-space-between label {
+    border: 2px solid #004E6B;
+    color: #004E6B; 
+    border-radius: .3rem;
+    padding: .2rem;
+}
+
+.RH_form_lastSection{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.RH_form_lastSection .RH-space-between {
+    display: flex;
+    align-items: center;
+}
+.RH_form_lastSection .RH-space-between .image_size{
+    color: #282828;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 1rem;
+}
+.RH_form_lastSection .RH-space-between .size1 {
+    border: .1rem soli d#004E6B;
+    color: #004E6B; 
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+.RH_form_lastSection .RH-space-between .size3 {
+    border: .1rem solid gray;
+    color: gray; 
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 0.3rem;
+}

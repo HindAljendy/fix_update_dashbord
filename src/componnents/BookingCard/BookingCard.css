@@ -1,0 +1,76 @@
+.rh-card {
+    padding: 1.25rem;
+    background-color: #fffdfd;
+    box-shadow: 3px 4px 8px 0px rgba(24, 29, 31, 0.05);
+    border-radius: 16px;
+}
+  
+.booking-card {
+   width: 100%;
+   height: 227px;
+   margin-left: 1.25rem;
+   margin-top: 1.5rem;
+   margin-bottom: 1rem;
+}
+  
+.booking-card .font-1 {
+    color: gray;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+  
+.booking-card h3 {
+    color: #282828;
+    font-size: 20.5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+  
+.booking-card .information {
+    display: flex;
+    justify-content: space-between;
+}
+.booking-card .information .information_font{
+    color: rgba(40, 40, 40, 0.65);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.booking-card .information .personal_information_font{
+    color: #282828;
+    width: 703px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.booking-card .information div {
+    width: 30%;
+   
+}
+  
+.booking-card .description {
+    margin-top: 1.5rem;
+
+}
+.booking-card .description .description_font{
+    color: rgba(40, 40, 40, 0.65);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+    margin-bottom: 10px;
+}
+
+.booking-card .description .personal_description_font{
+    color: #282828;
+    font-size: 12.059px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.9%; /* 16.026px */
+}

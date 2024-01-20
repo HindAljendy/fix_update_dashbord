@@ -1,0 +1,41 @@
+.MS_food_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.44rem;
+    padding-right: 4.12rem;
+    padding-top: 1rem;
+    color: rgba(0, 78, 107, 1);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.RH_scope_food{
+    width: 983px;
+    height: 734px;
+    background-color: rgba(253, 251, 251, 0.908);  
+    border-radius: 16.2px;
+    box-shadow: 14.17626px 10.1259px 16.20144px 0px rgba(24, 29, 31, 0.14);
+}
+.RH_content_margin{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.RH_link_food a{
+    color: #004E6B;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    margin: 0.5rem;
+    
+}
+.RH_cards_food{
+    width: 100%;
+    padding-top:2rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: row;
+}

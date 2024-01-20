@@ -1,0 +1,30 @@
+.paginate{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.5rem;
+    margin-top: 1em;
+}
+.space_paginate_numbers{
+    display: flex; 
+    justify-content: space-between;
+    gap: 0.5rem; 
+
+}
+
+.page-link { 
+    color:  #004E6B;
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 0.3125rem;
+    border: 1px solid #D9D9D9;
+    background:  #FFFDFD; 
+}
+.paginate_page{
+    margin-right: 3.5rem;
+}
+.paginate_page_food{
+    margin-right: 1rem;
+}

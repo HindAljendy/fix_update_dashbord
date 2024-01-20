@@ -1,0 +1,105 @@
+.card_room{
+    width: 745px;
+    height: 339.448px;
+    border-radius: 16.2px;
+    background: #FFFDFD;
+    margin-left: 1.1rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 14.176px 10.126px 16.201px 0px rgba(24, 29, 31, 0.14);
+}
+.card_room .row12
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.card_room .HJ_room-img img {
+    width: 310px;
+    height: 21.2155rem;
+    border-radius: 0.6105rem 0rem 0rem 0.57238rem;
+}
+.card_room .HJ_card-body .HJ_card-title{
+    color: black;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.card_room .HJ_card-body{
+    width: 52%; 
+    margin-left: 1.4rem;
+} 
+.card_room .HJ_card-body .HJ_card-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:1.25rem;
+}
+.card_room .HJ_card-body .HJ_card-name .Room_card-icons .Room_card-icons-first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+.card_room .HJ_card-body .HJ_card-text{
+    color: #282828;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4rem; 
+}
+.card_room .HJ_card-body .HJ_card-text_paragraph{
+    color: #282828;
+    font-size: 12.1px;
+    font-style: normal;
+    font-weight: 200;
+    margin-bottom: 1.73rem;
+}
+
+.card_room .HJ_card-body .room_card_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.76rem;
+}
+.card_room .HJ_card-body .room_card_icons .space_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.card_room .HJ_card-body .room_card_icons .space_icons .size_img_room{
+    width: 2.34269rem;
+    height: 2.18563rem;
+}
+.card_room .HJ_card-body .room_card_icons .space_icons .size_font_room{
+    color:  #474444e5;
+    font-size: 0.7rem;
+    font-style: normal;
+    line-height: 132.9%; /* 0.80131rem */
+}
+.card_room .HJ_card-body .room_features {
+    margin-top: 1.5rem;
+
+}
+.card_room .HJ_card-body .room_features .pice_room{
+    color: #004E6B;
+    font-family: Montserrat;
+    font-size: 2.11025rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 0.5rem;
+}
+
+.card_room .HJ_card-body .room_features .time_room{
+    color: #282828;
+    font-family: Montserrat;
+    font-size: 0.829rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

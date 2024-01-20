@@ -1,0 +1,22 @@
+
+.MS_explore_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.44rem;
+    padding-right: 4.12rem;
+    padding-top: 1rem;
+    color: rgba(0, 78, 107, 1);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+
+}
+.MS_explore_top .MS_paragraph{
+    font-size: 19px;
+    font-weight: 500;
+}
+.HJ_space{
+    margin-right: 1rem;
+}

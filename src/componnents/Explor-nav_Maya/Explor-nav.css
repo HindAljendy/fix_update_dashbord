@@ -1,0 +1,40 @@
+.MS_navbar{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;  
+    color: rgba(146, 140, 140, 1);
+    border-bottom: 1px solid  rgba(146, 140, 140, 1) ;  
+}
+.MS_navbar ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.MS_navbar ul li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.MS_navbar ul li a{
+    text-decoration: none;
+    color: rgba(146, 140, 140, 1);
+
+}
+.MS_navbar ul li a:hover{
+    color: rgba(0, 78, 107, 1);
+    border-bottom: 2px solid rgba(0, 78, 107, 1);  
+    padding-bottom: 18px; 
+}
+
+@media screen  and (max-width:1366px){
+ 
+    .MS_navbar ul li{
+        list-style: none;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}

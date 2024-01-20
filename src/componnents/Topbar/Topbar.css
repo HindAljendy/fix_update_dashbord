@@ -1,0 +1,25 @@
+.HJ_topbar{
+    width: 100%; 
+    height: 3.5rem;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1.44rem;
+    padding-right: 4.12rem;
+    color: rgba(0, 78, 107, 1);
+    font-family: Montserrat;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.HJ_topbar .HJ_topbar_icons{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+}
+.HJ_topbar .HJ_topbar_icons h4{
+    margin: 0;
+}

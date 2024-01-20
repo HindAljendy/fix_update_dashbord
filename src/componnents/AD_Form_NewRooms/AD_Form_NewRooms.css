@@ -1,0 +1,167 @@
+
+.AD_FormRoom_part1 , .AD_FormRoom_part2{
+    display: flex;
+    gap:4.8rem; 
+    margin-top: 2rem;
+}
+.AD_inputBox{
+    position: relative;
+}
+.AD_inputBox input {
+    width: 25rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom:  1px solid #282828;
+    margin-right: 10px;
+    padding: 10px;
+}
+.AD_form_select  {
+    position: relative;
+    top: 1.3rem;  
+}
+.AD_floating {
+    position: relative;
+    top: 1.3rem;
+}
+.AD_form_select select , .AD_floating select{
+    width: 25rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom:  1px solid #282828;
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.AD_form_select label , .AD_floating label{
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+    position: absolute;
+    left: 0rem;
+    top: -0.8rem;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.AD_form_select label::after , .AD_floating label::after {
+    content: '*';
+    color:  #E76A6A;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.AD_floating label.focused , .AD_form_select label.focused  {
+    transform: translateY(-20px);
+    padding: 2px 10px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color:#282828;
+}
+.AD_inputBox  span{
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+    position: absolute;
+    left: 0rem;
+    top: 0.5rem;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+
+}
+.AD_inputBox  span::after {
+    content: '*';
+    color:  #E76A6A;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+}
+.AD_inputBox input:valid ~ span ,
+.AD_inputBox input:focus ~ span
+{
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transform:translateX(5px) translateY(-15px);
+    padding: 0 10px;
+    background: transparent;
+}
+
+.AD_FormRoom_part3 .AD_description{
+    width: 55.6rem;
+    height: 12.7rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.AD_FormRoom_part3 label{
+    color: #282828;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.AD_FormRoom_images{
+    display: flex;
+    flex-direction: column; 
+    width: 55.6rem;
+    border-radius: 0.5rem;
+    background: #FFFDFD; 
+    position: relative;
+}
+.AD_FormRoom_images .AD_title_photos{
+    color: #282828;
+    font-size: 0.625rem;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+.AD_FormRoom_images .AD_ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    margin-right: 1rem; 
+}
+.AD_FormRoom_images .AD_ul .AD_imageRoom {
+    width: 6.1rem;
+    height: 6.25rem; 
+    border-radius: 0.625rem;
+    position: relative;
+}
+.AD_FormRoom_images .AD_ul .AD_form-image{
+    width: 6.25rem;
+    height: 6.25rem; 
+    border-radius: 0.625rem;
+    background-color: #004E6B;
+}
+.AD_FormRoom_images .AD_ul .AD_new_room{
+    width: 2rem;
+    position: absolute;
+    right:45px;
+    bottom: 52px; 
+}
+
+
+.AD_form_buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.AD_form_buttons .HJ_btn{
+    margin: 0;
+    margin-left: 20px;
+}
+.AD_buttons_space{
+    margin-right: 4rem;
+}
+.AD_space{
+    margin-left: 0.5rem;
+}
