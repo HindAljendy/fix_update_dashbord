@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const subdirectory='/fix_update_dashbord';
+const subdirectory ='/fix_update_dashbord';
 
 root.render(
   <React.StrictMode>
