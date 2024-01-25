@@ -14,7 +14,7 @@ const Sidebar = () => {
   const [isOpen , setIsOpen] = useState(true);
   const toggle = ()=> setIsOpen (!isOpen);
 
- const [activeItem , setActiveItem] = useState(null);
+ const [activeItem , setActiveItem] = useState('item1');
   const handleItemClick = (item)=>{
     setActiveItem(item);
   }; 

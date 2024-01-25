@@ -1,0 +1,11 @@
+
+
+const GeneralApi = () => {
+
+    
+
+    return(
+        <>
+        </>
+    )
+}
