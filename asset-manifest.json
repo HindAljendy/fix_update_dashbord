@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fix_update_dashbord/static/css/main.767d0a7d.css",
-    "main.js": "/fix_update_dashbord/static/js/main.b87d9de2.js",
+    "main.js": "/fix_update_dashbord/static/js/main.5fe39e91.js",
     "static/js/787.3c95c204.chunk.js": "/fix_update_dashbord/static/js/787.3c95c204.chunk.js",
     "static/media/[Sia - Snowman (Lyrics) [status whatsapp 30 second(360P).mp4": "/fix_update_dashbord/static/media/[Sia - Snowman (Lyrics) [status whatsapp 30 second(360P).24e3194dcbf2eba7fc76.mp4",
     "static/media/room.png": "/fix_update_dashbord/static/media/room.2bb511bec6f3bbce28c1.png",
@@ -52,11 +52,11 @@
     "static/media/trash-black.svg": "/fix_update_dashbord/static/media/trash-black.cdd6be458806106adc6ffce33367a46e.svg",
     "static/media/x1.svg": "/fix_update_dashbord/static/media/x1.1b470a9b968f3f1b62bc91e24b2e8852.svg",
     "main.767d0a7d.css.map": "/fix_update_dashbord/static/css/main.767d0a7d.css.map",
-    "main.b87d9de2.js.map": "/fix_update_dashbord/static/js/main.b87d9de2.js.map",
+    "main.5fe39e91.js.map": "/fix_update_dashbord/static/js/main.5fe39e91.js.map",
     "787.3c95c204.chunk.js.map": "/fix_update_dashbord/static/js/787.3c95c204.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.767d0a7d.css",
-    "static/js/main.b87d9de2.js"
+    "static/js/main.5fe39e91.js"
   ]
 }
