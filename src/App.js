@@ -34,7 +34,7 @@ import TraditionalFood from './pages/Food/Tranditional_Food/TraditionalFood';
 import PopUpRoom from './componnents/popupRoom/PopUpRoom';
 import PopUpExplore from './componnents/popupExplore/PopUpExplore';
 import PopUpFood from './componnents/PopupFood/PopUpFood';
-// import MyComponent from './Api/Blog';
+import MyComponent from './Api/Blog';
 
 
 
@@ -44,7 +44,7 @@ function App() {
   return (
       <div className='App'>
         <Sidebar/>
-        {/* <MyComponent/> */}
+        <MyComponent/>
         {/* Routes the pages */}
         <Routes>
           {/* Routes of the Blogs page */}

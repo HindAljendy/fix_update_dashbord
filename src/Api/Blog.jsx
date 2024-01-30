@@ -7,7 +7,7 @@ function MyComponent() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://test.black-analysis-solutions.com/api/');
+        const response = await axios.get('https://test.black-analysis-solutions.com/api/rooms');
         setPersons(response.data);
         console.log(response.data);
       } catch (error) {
