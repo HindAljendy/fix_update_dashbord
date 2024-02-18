@@ -2,20 +2,39 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import attach from './../../images/attachsquare.svg'
 import { Link } from 'react-router-dom';
-
-export default function HelpCenter({ setShow , setdeletedMessage}) {
+import Modal from 'react-modal';
+import filter from './../../images/frame.svg'
+import trash from './../../images/delete small.svg'
+export default function HelpCenter({ setShow }) {
 
     const [HelpInbox, setHelpInbox] = useState([]);
     const [ReadedeMasseg, setReadedMasseg] = useState(null)
     const token = localStorage.getItem('token');
+    const [isOpen, setIsOpen] = useState(false);
 
     const handleChange = () => {
         setShow(false)
     }
-    const handleChange2 = () => {
-        setdeletedMessage(output)
+
+    const closeModal = () => {
+        setIsOpen(!isOpen);
     }
 
+    const handleDeleteM = async () => {
+        try {
+            const headers = {
+                'Accept': 'application/json',
+                'Authorization': token,
+            };
+            await axios.delete(`http://127.0.0.1:8000/api/helpCenter?${output}`, { headers })
+            
+            window.location.reload()
+        } catch (error) {
+            console.error('Error deleting item:', error);
+        }
+    };
+
+    
     useEffect(() => {
 
         const config = {
@@ -65,15 +84,29 @@ export default function HelpCenter({ setShow , setdeletedMessage}) {
         } else {
             setSelectedCards([...selectedCards, cardId]);
         }
-        handleChange2()
     };
 
     for (let i = 0; i < selectedCards.length; i++) {
         output += 'deleted_ids[' + i + ']=' + selectedCards[i] + '&';
     }
-
     return (
         <div className='FQ-TEXTremove'>
+            <div className="border-b">
+                <div className="toolbar">
+                    <div>
+                        <input type="checkbox" name="select" className='select_inbox' />
+                        <img src={filter} alt='filter' className='filter_inbox' />
+
+                    </div>
+                    <Link to='/inbox'
+                            onClick={ () => closeModal()}
+                            >
+                                    <img src={trash} alt="trash" />
+                            </Link>
+                </div>
+
+
+            </div>
             {HelpInbox.map(item => (
 
                 <div key={item.id}
@@ -118,6 +151,26 @@ export default function HelpCenter({ setShow , setdeletedMessage}) {
 
             ))
             }
+            <div className='HJ_screen_popup'>
+                    <Modal isOpen={isOpen} onRequestClose={closeModal} className="HJ_modal_popUp">
+                        <div className="ReactModal__Overlay ReactModal__Overlay--after-open">
+                            <div className="ReactModal__Content ReactModal__Content--after-open HJ_modal_popUp" tabindex="-1" role="dialog" aria-modal="true">
+                                <div class="ReactModal__Body--open">
+                                    <h2>Delete the article?</h2>
+                                    <p>You can be able to recover it</p>
+                                    <div>
+                                        <button className='btn_cancel'
+                                            onClick={() => closeModal()}
+                                        >cancel</button>
+                                        <button className='HJ_btn' onClick={() => handleDeleteM()}>Delete Article</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </Modal>
+
+                </div>
         </div>
     )
 }
