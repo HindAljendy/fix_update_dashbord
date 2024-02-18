@@ -165,3 +165,8 @@
 .AD_space{
     margin-left: 0.5rem;
 }
+.btn_cancel a
+{
+    text-decoration: none;
+    color: black;
+}

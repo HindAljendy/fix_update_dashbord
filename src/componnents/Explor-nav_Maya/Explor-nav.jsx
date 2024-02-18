@@ -11,7 +11,7 @@ function EXNavbar() {
             <li><Link to='/explore/nature' >Nature</Link></li>
             <li><Link to='/explore/pool' >Pool</Link></li>
             <li><Link to='/explore/events' >Events</Link></li>
-
+            <li><Link to='/explore/Conferences' >Conferences</Link></li>
           </ul>
           
     </nav>

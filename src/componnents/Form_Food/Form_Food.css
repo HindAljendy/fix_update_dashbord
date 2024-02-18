@@ -84,7 +84,7 @@
 
 .RH_form_lastSection{
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     margin-top: 1rem;
 }
 .RH_form_lastSection .RH-space-between {
@@ -112,4 +112,20 @@
     border-radius: 0.5rem;
     margin-left: 0.5rem;
     padding: 0.3rem;
+}
+.FQ-inputFlex
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.FQ-inputFlex .lAN-FGQ
+{
+    width: 290px;
+    padding: 10px;
+    padding-top: 20px;
+}
+.width-input-max-FQ input
+{
+    width: 50%;
 }

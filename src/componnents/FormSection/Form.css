@@ -119,6 +119,15 @@
     width: 95%;
     margin-right: 5%;
     margin-bottom: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.HJ_form_select div{
+    width: 30%;
+}
+.HJ_form_select div .HJ_select{
+    max-height: 200px;
+    overflow-y: auto;
 }
 .HJ_form_select select{
     width: 100%;
@@ -136,6 +145,17 @@
     font-weight: 400;
     position: absolute;
     left: 0rem;
+    top: -0.8rem;
+    padding: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.HJ_form_select .labale2{
+    color: #282828;
+    font-size: 1.25rem;
+    font-weight: 400;
+    position: absolute;
+    right: 0rem;
     top: -0.8rem;
     padding: 10px;
     pointer-events: none;
@@ -187,7 +207,10 @@
 .HJ_form_buttons .HJ_btn{
     margin: 0 0 0 20px;
 }
-
+.HJ_form_buttons a{
+    text-decoration: none;
+    color: black;
+}
 
 
 

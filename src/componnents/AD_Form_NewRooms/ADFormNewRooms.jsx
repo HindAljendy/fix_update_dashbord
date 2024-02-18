@@ -2,6 +2,7 @@ import './AD_Form_NewRooms.css'
 import small_photo from './../../images/Rectangle 113.png'
 import { useState } from 'react'
 import ImageSmallDrop from '../ImageSmallDrop/ImageSmallDrop'
+import { Link } from 'react-router-dom'
 
 const ADFormNewRooms = () => {
     const [roomName, setRoomName] = useState(''); /* input */
@@ -90,7 +91,8 @@ const ADFormNewRooms = () => {
             </div>
 
             <div className='AD_form_buttons AD_buttons_space'>
-                <button  className='btn_cancel'>Cancel</button> 
+                <Link to='/room'><button  className='btn_cancel'>Cansel</button> </Link>
+                
                 <button  type='submit' className='HJ_btn'>Add Room</button> 
             </div> 
 

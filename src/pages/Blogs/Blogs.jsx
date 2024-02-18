@@ -1,9 +1,7 @@
 import Topbar from '../../componnents/Topbar/Topbar'
 import './Blogs.css'
 import  new_article from './../../images/add-circle.svg'
-import CardArticle from '../../componnents/CardArticle/CardArticle'
-import  article_photo1 from './../../images/Rectangle 23.png'
-import  article_photo2 from './../../images/Rectangle 11.png'
+import BlogArticle from './../../Api/Blog.jsx'
 import { Link } from 'react-router-dom'
 import Calender from '../../componnents/Calender/Calender'
 
@@ -19,10 +17,7 @@ const Blogs = () => {
               New Article
             </button>
             </Link>
-            <CardArticle image = {article_photo1} />
-            <CardArticle image = {article_photo2} />
-            <CardArticle image = {article_photo2} />
-            <CardArticle image = {article_photo2} />
+            <BlogArticle/>
 
           </div>
           <div className='HJ_sectionTwo HJ_sectionTwo_space1 '>

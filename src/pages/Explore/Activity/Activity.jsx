@@ -3,6 +3,7 @@ import CardExplore from '../../../componnents/CardExplore/CardExplore'
 import  gallery_add from './../../../images/gallery-add.svg'
 import  article_photo1 from './../../../images/Rectangle 23.png'
 import PaginateItems from '../../../componnents/paginateItems/PaginateItems'
+import ExploreApiActiveties from '../../../Api/ExploreApi/ExploreApiActiveties'
 
 const Activity = () => {
   return (
@@ -14,9 +15,7 @@ const Activity = () => {
           <Link to='/new_ArticleExplore'>Add New Article</Link>
         </div>
       </div>
-      <CardExplore image = {article_photo1} />
-      <CardExplore image = {article_photo1} /> 
-      <CardExplore image = {article_photo1} /> 
+      <ExploreApiActiveties/>
       <div className='paginate_page'>
         <PaginateItems/>
 

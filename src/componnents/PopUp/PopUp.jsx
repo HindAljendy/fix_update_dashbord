@@ -1,6 +1,6 @@
 import './PopUp.css'
 import React, { useState } from 'react';
-import Modal from 'react-modal';
+
 import Topbar from '../../componnents/Topbar/Topbar'
 import new_article from './../../images/add-circle.svg'
 import article_photo1 from './../../images/Rectangle 23.png'
@@ -9,11 +9,7 @@ import { Link } from 'react-router-dom';
 import CardArticle from './../../componnents/CardArticle/CardArticle'
 
 const PopUp = () => {
-    const [isOpen, setIsOpen] = useState(true);
-
-    const closeModal = () => {
-        setIsOpen(false);
-    }
+    
     return (
         <div className='HJ_container'>
             <div className='HJ_screen_main'>
@@ -42,24 +38,7 @@ const PopUp = () => {
                     </div>
                 </div>
             </div>
-            <div className='HJ_screen_popup'>
-                <Modal isOpen={isOpen} onRequestClose={closeModal} className="HJ_modal_popUp">
-                    <div className="ReactModal__Overlay ReactModal__Overlay--after-open">
-                        <div className="ReactModal__Content ReactModal__Content--after-open HJ_modal_popUp" tabindex="-1" role="dialog" aria-modal="true">
-                            <div class="ReactModal__Body--open">
-                                <h2>Delete the article?</h2>
-                                <p>You can be able to recover it</p>
-                                <div>
-                                    <button className='btn_cancel'>cancel</button>
-                                    <button className='HJ_btn' onClick={closeModal}>Delete Article</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </Modal>
-
-            </div>
+            
         </div>
 
     )

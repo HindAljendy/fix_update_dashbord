@@ -1,10 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import  food_add from './../../../images/gallery-add.svg'
-import FoodCard from '../../../componnents/FoodCard/FoodCard'
-import PaginateItems from '../../../componnents/paginateItems/PaginateItems'
+import OriantalAPI from '../../../Api/Food/Oriental'
 
 const OrientalFood = () => {
+
+  const [start , setstart] = useState(0)
+  const [end , setend] = useState(6)
+
+  const handelNextclick = () =>
+  {
+    setstart(start + 6)
+    setend(end + 6)
+  }
+
+  const handelPrevclick = () =>
+  {
+    setstart(start - 6)
+    setend(end - 6)
+  }
+
+
   return (
     <>
         <div className='MS_food_top'>
@@ -18,22 +34,28 @@ const OrientalFood = () => {
           <div className='RH_scope_food' >
             <div className='RH_cards_food'>
               <div className='RH_cards_food_column1'>
-                <FoodCard/>
-                <FoodCard/>
-                <FoodCard/>
-              </div>
-              <div className='RH_cards_food_column2'>
-                <FoodCard/>
-                <FoodCard/>
-                <FoodCard/>
+                <OriantalAPI
+              start = {start}
+              end = {end}
+              />
               </div>
 
             </div>
+            <div className='PAgenat'>
+            <button
+            onClick={() =>  handelPrevclick()}
+            className={start == 0 ? 'DisActiv' : ''}
+            >P</button>
+            <button>{end/6}</button>
+            <button>{(end/6) + 1}</button>
+            <button>{(end/6) + 2}</button>
+            <button
+            onClick={() =>  handelNextclick()}
+            className={end == 120 ? 'DisActiv' : ''}
+            >N</button>
           </div>
-          <div className='paginate_page_food'>
-            <PaginateItems/>
-
           </div>
+          
 
         </div>
 

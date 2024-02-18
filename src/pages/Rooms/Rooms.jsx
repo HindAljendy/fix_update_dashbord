@@ -2,8 +2,7 @@ import './Rooms.css'
 import { Link } from 'react-router-dom'
 import Topbar from '../../componnents/Topbar/Topbar'
 import new_room from './../../images/add-circle.svg'
-import CardRoom from '../../componnents/CardRoom/CardRoom'
-
+import RoomsApi from '../../Api/RoomsApi'
 
 const Rooms = () => {
     return (
@@ -18,10 +17,9 @@ const Rooms = () => {
                             New Room
                             </button>
                         </Link>
+
+                    <RoomsApi/>
                     
- 
-                    <CardRoom/>
-                    <CardRoom/>
                 </div>
                 <div className='HJ_sectionTwo HJ_sectionTwo_space1  AD_FilterBy'>
                     <h3 className='HJ_filterBy'>Filter by</h3>

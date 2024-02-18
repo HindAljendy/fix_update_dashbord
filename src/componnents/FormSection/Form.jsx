@@ -3,20 +3,29 @@ import gallery_add from './../../images/gallery-add.svg'
 import './Form.css'
 import { Link } from 'react-router-dom';
 import ImageDropZone from '../ImageDropZone/ImageDropZone';
+import axios from 'axios';
 
 const Form = () => {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [selectedOption, setSelectedOption] = useState('');
-  const [selectedDate, setSelectedDate] = useState('');
+  const [selectedLN, setselectedLN] = useState('');
+  const [selectedsummary, setselectedsummary] = useState('');
+  const [faile, setChildValue] = useState(null); //chosing
+  const token = localStorage.getItem('token');
 
+  console.log(title, description, selectedOption, selectedLN, faile, selectedsummary)
+
+
+  const handleChildValueChange = (faile) => {
+    setChildValue(faile);
+  };
 
   const [focused, setFocused] = useState(false);
 
   const handleFocus = () => {
     setFocused(true);
   };
-
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
@@ -30,8 +39,12 @@ const Form = () => {
     setSelectedOption(e.target.value);
   }
 
+  const handleSelectChangeLN = (e) => {
+    setselectedLN(e.target.value);
+  }
+
   const handleDateChange = (e) => {
-    setSelectedDate(e.target.value);
+    setselectedsummary(e.target.value);
   }
 
   const handleSubmit = (e) => {
@@ -39,12 +52,42 @@ const Form = () => {
 
   }
 
+  const handleFileUpload = async () => {
+    const formData = new FormData();
+    formData.append('title', title);
+    formData.append('summary', selectedsummary);
+    formData.append('description', description);
+    formData.append('tags[0]', selectedOption);
+    formData.append('images[0]', faile);
+    formData.append('videos[0]', faile);
+    formData.append('language_id', selectedLN);
+
+    const config = {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+        'Authorization': token
+      }
+    };
+
+    await axios.post('http://127.0.0.1:8000/api/articles', formData, config)
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+
+    window.location.href = '/';
+  };
+
   return (
     <form onSubmit={handleSubmit} className='HJ_form'>
       <div className='HJ_form-part1'>
         <label className='HJ_label'>Article Cover</label>
         <div className='HJ_content'>
-          <ImageDropZone />
+          <ImageDropZone
+            onChildValueChange={handleChildValueChange}
+          />
         </div>
       </div>
       <div className='HJ_form-part2'>
@@ -53,16 +96,31 @@ const Form = () => {
           <span>Title</span>
         </div>
 
-        <input type='date' value={selectedDate} onChange={handleDateChange} className='HJ_date' />
+        <div className='HJ_inputBox'>
+          <input type='text' value={selectedsummary} required onChange={handleDateChange} className='HJ_title' />
+          <span>Sammary</span>
+        </div>
       </div>
 
       <div className='HJ_form_select'>
-        <label className={focused ? 'focused' : ''}>Tags</label>
-        <select name="tags" onFocus={handleFocus} value={selectedOption} onChange={handleSelectChange} className='HJ_select' required>
-          <option></option>
-          <option value="mountain_breeze"> Mountain_Breeze</option>
-          <option value="tourism"> Tourism</option>
-        </select>
+        <div>
+          <label className={focused ? 'focused' : ''}>Tags</label>
+          <select name="tags" onFocus={handleFocus} value={selectedOption} onChange={handleSelectChange} className='HJ_select' required>
+            <option></option>
+            <option value="1"> #Mountain_Breeze</option>
+            <option value="2"> #Syrai</option>
+            <option value="3"> #Tourism</option>
+            <option value="4"> placeat</option>
+            <option value="5"> praesentium</option>
+          </select>
+        </div>
+        <div>
+          <select name="EN" value={selectedLN} onChange={handleSelectChangeLN} className='HJ_select' required>
+            <option>Storage Language</option>
+            <option value="1"> عربي</option>
+            <option value="2"> Englesh</option>
+          </select>
+        </div>
       </div>
 
       <div className='HJ_form_description'>
@@ -77,7 +135,7 @@ const Form = () => {
       </div>
       <div className='HJ_form_buttons'>
         <button className='btn_cancel'>Cancel</button>
-        <button type='submit' className='HJ_btn'>Add Article</button>
+        <button type='submit' className='HJ_btn' onClick={handleFileUpload}>Add Article</button>
       </div>
 
     </form>

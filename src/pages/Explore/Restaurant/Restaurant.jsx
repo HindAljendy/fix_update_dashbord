@@ -1,8 +1,7 @@
 import { Link } from 'react-router-dom'
-import CardExplore from '../../../componnents/CardExplore/CardExplore'
 import  gallery_add from './../../../images/gallery-add.svg'
-import  article_photo1 from './../../../images/Rectangle 23.png'
 import PaginateItems from '../../../componnents/paginateItems/PaginateItems'
+import ExploreApiRestaurant from '../../../Api/ExploreApi/ExploreApiRestaurant'
 
 const Restaurant = () => {
   return (
@@ -14,9 +13,7 @@ const Restaurant = () => {
             <Link to='/new_ArticleExplore'>Add New Article</Link>
           </div>
         </div>
-        <CardExplore image = {article_photo1} />
-        <CardExplore image = {article_photo1} /> 
-        <CardExplore image = {article_photo1} /> 
+        <ExploreApiRestaurant />
         <div className='paginate_page'>
          <PaginateItems/>
 

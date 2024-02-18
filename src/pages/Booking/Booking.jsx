@@ -1,4 +1,4 @@
-import BookingCard from "../../componnents/BookingCard/BookingCard"
+import BookingApi from "../../Api/BookingApi"
 import Calender from "../../componnents/Calender/Calender"
 import Topbar from "../../componnents/Topbar/Topbar"
 
@@ -8,8 +8,8 @@ const Booking = () => {
       <Topbar title="Booking"/>
       <div className="HJ_sections">
         <div className="HJ_sectionOne">
-          <BookingCard/>
-          <BookingCard/>
+          
+          <BookingApi/>
 
         </div>
         <div className='HJ_sectionTwo HJ_filter_sectionTwo_space2 AD_FilterBy '>

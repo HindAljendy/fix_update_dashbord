@@ -1,9 +1,8 @@
-import  article_photo1 from './../../images/Rectangle 23.png'
-import  article_photo2 from './../../images/Rectangle 11.png'
 import './DeletedArticles.css'
 import CardDelete from '../CardDelete/CardDelete'
 import TopbarSearchInput from '../TopbarSearchInput/TopbarSearchInput'
 import Calender from '../Calender/Calender'
+import DeletedBlogArticle from '../../Api/DeletedBlog'
 
 const DeletedArticles = () => {
   return (
@@ -12,10 +11,8 @@ const DeletedArticles = () => {
         <div className='HJ_sections'>
           <div className='HJ_sectionOne'>
             <div className='HJ_card_Deletes'>
-                <CardDelete image = {article_photo1} />
-                <CardDelete image = {article_photo2} />
-                <CardDelete image = {article_photo2} />
-                <CardDelete image = {article_photo2}  />
+                {/* <CardDelete image = {article_photo1} /> */}
+                <DeletedBlogArticle/>
             </div>
           </div>
           <div className='HJ_sectionTwo HJ_filter_sectionTwo_space2'>

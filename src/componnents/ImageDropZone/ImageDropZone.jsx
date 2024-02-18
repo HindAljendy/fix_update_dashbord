@@ -2,17 +2,18 @@ import React, { useState } from 'react';
 import  new_article from './../../images/add-circle.svg'
 import './ImageDropZone.css'
 
-const ImageDropZone = () => {
+
+const ImageDropZone = ({onChildValueChange}) => {
+  
     const [image, setImage] = useState(null);
     const [imageVisible, setImageVisible] = useState(true);
     const handleImageLoad = () => {
         setImageVisible(false);
     };
-
-
     const handleDrop = (e) => {
       e.preventDefault();
     const file = e.dataTransfer.files[0];
+    onChildValueChange(file)
       handleImage(file); 
     };
     
@@ -27,8 +28,10 @@ const ImageDropZone = () => {
     };
     reader.readAsDataURL(file);
     }; 
+
   return (
     <div
+    
         onDrop={handleDrop}
         onDragOver={handleDragOver}
         className='HJ_form-image'> 
