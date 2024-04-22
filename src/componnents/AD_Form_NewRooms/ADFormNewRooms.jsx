@@ -10,15 +10,15 @@ const ADFormNewRooms = () => {
     const [guestNumber, setGuestNumber] = useState(''); /* select */
     const [roomPrice, setRoomPrice] = useState('');    /* input */
     const [descriptionRoom, setDescriptionRoom] = useState(''); /* descriprion */
-   
+
     const [focused, setFocused] = useState(false);
     const [focusedTwo, setFocusedTow] = useState(false);
-    
+
     const handleFocus = () => {
         setFocused(true);
     };
     const handleFocusTwo = () => {
-        setFocusedTow (true);
+        setFocusedTow(true);
     };
 
     const handleRoomName = (e) => {
@@ -38,19 +38,19 @@ const ADFormNewRooms = () => {
     }
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+
     }
     return (
         <form onSubmit={handleSubmit} className='HJ_form'>
             <div className='AD_FormRoom_part1'>
                 <div className='AD_inputBox'>
-                    <input className='AD_input' type="text" value={roomName} onChange={handleRoomName}  required />
+                    <input className='AD_input' type="text" value={roomName} onChange={handleRoomName} required />
                     <span>Room Name</span>
                 </div>
                 <div className='AD_floating'>
                     <label className={focusedTwo ? 'focused' : ''}>Room Type</label>
-                    <select name='types'  onFocus={handleFocusTwo} value={roomType} onChange={handleRoomType} className='AD_select' required>
-                        <option  value="Room Type"  ></option>
+                    <select name='types' onFocus={handleFocusTwo} value={roomType} onChange={handleRoomType} className='AD_select' required>
+                        <option value="Room Type"  ></option>
                     </select>
                 </div>
             </div>
@@ -58,43 +58,46 @@ const ADFormNewRooms = () => {
             <div className='AD_FormRoom_part2'>
                 <div className='AD_form_select'>
                     <label className={focused ? 'focused' : ''}>Guests Number</label>
-                    <select  name="numbers"  onFocus={handleFocus} value={guestNumber} onChange={handleGuestNumber} className='AD_select' required>
-                        <option  value="guest number"  ></option>
+                    <select name="numbers" onFocus={handleFocus} value={guestNumber} onChange={handleGuestNumber} className='AD_select' required>
+                        <option value="guest number"  ></option>
                     </select>
                 </div>
                 <div className='AD_inputBox AD_space'>
-                    <input className='AD_input ' type="text" value={roomPrice} onChange={handleRoomPrice}  required />
-                    <span>Room price</span>
+                    <input className='AD_input ' type="text" value={roomPrice} onChange={handleRoomPrice} required />
+                    <span>Room price </span>
+                </div>
+            </div>
+
+            <div className='AD_FormRoom_part2'>
+                <div className='AD_inputBox AD_space'>
+                    <input className='AD_input ' type="text" value={roomPrice} onChange={handleRoomPrice} required />
+                    <span>Summary</span>
+                </div>
+                <div className='AD_inputBox AD_space'>
+                    <input className='AD_input ' type="text" value={roomPrice} onChange={handleRoomPrice} required />
+                    <span>language</span>
                 </div>
             </div>
 
             <div className='AD_FormRoom_part3 my-4'>
                 <label>Description</label>
-                <input type="text" value={descriptionRoom}   onChange={handleDescriptionRoom} className='AD_description' />
+                <input type="text" value={descriptionRoom} onChange={handleDescriptionRoom} className='AD_description' />
             </div>
 
             <div className='AD_FormRoom_images'>
                 <h3 className='AD_title_photos'>Photos</h3>
                 <ul className='AD_ul'>
-                    <li><img className='AD_imageRoom' src={small_photo} alt="room" /></li>
-                    <li><img className='AD_imageRoom' src={small_photo} alt="room" /></li>
-                    <li><img className='AD_imageRoom' src={small_photo} alt="room" /></li>
-                    <li><img className='AD_imageRoom' src={small_photo} alt="room" /></li>
-                    <li><img className='AD_imageRoom'  src={small_photo} alt="room" /></li>
-                    <li><img className='AD_imageRoom' src={small_photo} alt="room" /></li>
-                    <li><img className='AD_imageRoom' src={small_photo} alt="room" /></li>
-                    <li> 
-                      
-                        <ImageSmallDrop/>
+                    <li>
+                        <ImageSmallDrop />
                     </li>
                 </ul>
             </div>
 
             <div className='AD_form_buttons AD_buttons_space'>
-                <Link to='/room'><button  className='btn_cancel'>Cansel</button> </Link>
-                
-                <button  type='submit' className='HJ_btn'>Add Room</button> 
-            </div> 
+                <Link to='/room'><button className='btn_cancel'>Cansel</button> </Link>
+
+                <button type='submit' className='HJ_btn'>Add Room</button>
+            </div>
 
 
         </form>
