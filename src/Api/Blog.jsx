@@ -38,6 +38,7 @@ function BlogArticle() {
             summary = {item.summary}
             description = {item.description}
             Tags = {item.tags[0]}
+            created_at = {item.created_at}
             />
         </div>
         

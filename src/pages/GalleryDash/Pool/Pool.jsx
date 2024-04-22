@@ -9,10 +9,10 @@ import ZHPhotos from '../../../componnents/ZH_Photos/ZHPhotos'
 import ZHVideos from '../../../componnents/ZH_Videos/ZHVideos'
 import { Link } from 'react-router-dom'
 import PaginateItems from '../../../componnents/paginateItems/PaginateItems'
-import EventsGApi from '../../../Api/Gallery/EventsGApi'
+import PoolGApi from '../../../Api/Gallery/PoolGApi'
 import { useState } from 'react'
 
-const EventsGallery = () => {
+const PoolGallery = () => {
 
     const [start , setstart] = useState(0)
     const [end , setend] = useState(14)
@@ -40,7 +40,7 @@ const EventsGallery = () => {
                 </div>
             </div>
             <div className='zh-gallery-dashboard'>
-                <EventsGApi
+                <PoolGApi
                 start={start}
                 end={end}
                 />
@@ -94,7 +94,7 @@ const EventsGallery = () => {
     )
 }
 
-export default EventsGallery
+export default PoolGallery
 
 
 

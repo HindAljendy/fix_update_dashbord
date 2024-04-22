@@ -38,6 +38,7 @@ import PopUpFood from './componnents/PopupFood/PopUpFood';
 import Conferences from './pages/Explore/Conferences/Conferences';
 import EditArticleExplore from './componnents/EditArticleExplore/EditArticleExplore';
 import EditFood from './componnents/EditFood/EditFood';
+import PoolGallery from './pages/GalleryDash/Pool/Pool';
 
 
 
@@ -73,6 +74,7 @@ function App() {
           <Route path='/gallery/chalet' element={<ChaletGallery />} />
           <Route path='/gallery/activity' element={<  ActivityGallery />} />
           <Route path='/gallery/nature' element={< NatureGallery />} />
+          <Route path='/gallery/Pool' element={< PoolGallery />} />
           <Route path='/gallery/events' element={< EventsGallery />} />
         </Route>
 
@@ -103,8 +105,6 @@ function App() {
         <Route path='/edit_explore/:id' element={<EditArticleExplore />} />
         <Route path='/popup_explore' element={<PopUpExplore />} />
 
-
-
         {/* Routes of the Food page */}
         <Route path='/food' element={< Food />}>
           <Route index element={<WesternFood />} />
@@ -116,16 +116,11 @@ function App() {
         <Route path='/edit_food/:id' element={<EditFood />} />
         <Route path='/popup_food' element={<PopUpFood />} />
 
-
         {/* Routes of the Inbox page */}
 
         <Route path='/inbox' element={< Inbox />} />
         <Route path='/inbox/:id' element={< Inbox />} />
       </Routes>
-
-
-
-
 
     </div>
 

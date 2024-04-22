@@ -2,9 +2,11 @@
 .zh-gallery-dashboard-content{
     margin-left: 2%;
     width: 90%;
-    
 }
-
+.zh-section2-gl-dashboard2
+{
+    margin-top: 70px !important;
+}
 
 .zh-nav-gallery nav ul li a{
     text-decoration: none;
@@ -20,6 +22,13 @@
     justify-content: space-between;
     width:98%;
     margin: 0 auto;
+}
+.zh-gallery-dashboard2 .zh-gallery-title{ 
+    display: flex;
+    justify-content: space-between;
+    width:98%;
+    margin: 0 auto;
+    margin-top: 60px;
 }
 .zh-gallery-title .zh-gl-title-p{
     color: #004E6B;

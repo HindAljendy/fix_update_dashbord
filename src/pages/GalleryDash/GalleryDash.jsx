@@ -17,6 +17,7 @@ const GalleryDash = () => {
                             <li><Link to='/gallery/chalet' >Chalet</Link></li>
                             <li><Link to='/gallery/activity'>Activity</Link></li>
                             <li><Link to='/gallery/nature' >Nature</Link></li>
+                            <li><Link to='/gallery/Pool' >Pool</Link></li>
                             <li><Link to='/gallery/events' >Events</Link></li>
                         </ul>
                     </nav>

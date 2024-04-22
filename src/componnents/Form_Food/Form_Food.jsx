@@ -54,7 +54,6 @@ const Form_Food = () => {
     formData.append('title', titleFood);
     formData.append('description', descriptionFood);
     formData.append('images[0]', faile);
-    formData.append('language_id', selectedFoodLN);
     formData.append('food_category_id', selectedFood);
 
     const config = {

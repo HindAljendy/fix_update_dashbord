@@ -7,7 +7,7 @@ import Modal from 'react-modal';
 import { useState } from 'react'
 import axios from 'axios';
 
-const CardArticle = ({ id , image , Title , Tags , description}) => {
+const CardArticle = ({ id , image , Title , Tags , description , created_at}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const token = localStorage.getItem('token');
@@ -39,7 +39,7 @@ const CardArticle = ({ id , image , Title , Tags , description}) => {
                 <div className="HJ_card-body">
                     <div className='HJ_card-name'>
                         <h4 className="HJ_card-title">{Title}</h4>
-                        <h6  className="HJ_text-body-secondary">July 17, 2023</h6>
+                        <h6  className="HJ_text-body-secondary">{created_at}</h6>
                     </div>
                     <p className="HJ_card-text">{description}</p>
                     <p className="HJ_card-text"><small className=" HJ_text-body-secondary">{Tags}</small></p>
